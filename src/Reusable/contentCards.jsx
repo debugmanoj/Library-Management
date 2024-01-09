@@ -2,7 +2,7 @@ import React from 'react'
 import Col from 'react-bootstrap/Col';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Card from 'react-bootstrap/Card';
-import Children from './children';
+
 import Button from 'react-bootstrap/Button';
 
 function Cards({value}) {
@@ -25,7 +25,7 @@ function Cards({value}) {
         </div>
         <div  className='mb-3 d-flex justify-content-between'>
             <div>Short Bio</div>  
-            <div> {value.author?value.author.shortBio:"Update"}</div>
+            <div> {value.author?value.author.authorName:"Update"}</div>
         </div>
         <div  className='mb-3 d-flex justify-content-between'>
             <div className=''>Published</div>  
