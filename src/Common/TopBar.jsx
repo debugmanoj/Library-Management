@@ -15,7 +15,7 @@ function TopBar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link onClick={()=>navigate("/")} >Home</Nav.Link>
-            <Nav.Link  onClick={()=>navigate("/dashboard")} >Dashboard</Nav.Link>
+            
             <Nav.Link onClick={()=>navigate("/add")} >Add Book </Nav.Link>
 {/* 
             <NavDropdown title="Dropdown" id="basic-nav-dropdown">
