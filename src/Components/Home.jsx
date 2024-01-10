@@ -27,7 +27,7 @@ function Home() {
       <Row md={4}>  
       {
         result.map((e,i)=>{
-            return <Cards value={e} key={e.id}/>
+            return <Cards getData={ApiData} value={e} key={e.id}/>
         })
       }
         {/* <Col>

@@ -1,8 +1,8 @@
 import React from 'react'
 import Home from '../Components/Home'
 import AddBook from '../Components/AddBook'
-import Dashboard from '../Components/Dashboard'
 import { Navigate } from 'react-router-dom'
+import Edit from '../Components/Edit'
 const AppRoutes=[
     {
         path:"/",
@@ -14,10 +14,15 @@ const AppRoutes=[
         exact:true,
         element:<AddBook/>
     },
+    // {
+    //     path:"/dashboard",
+    //     exact:true,
+    //     element:<Dashboard/>
+    // },
     {
-        path:"/dashboard",
+        path:"/edit/:id",
         exact:true,
-        element:<Dashboard/>
+        element:<Edit/>
     },
     {
         path:"*",
