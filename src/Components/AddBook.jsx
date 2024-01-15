@@ -22,7 +22,7 @@ function AddBook() {
 
     },
     validationSchema:Yup.object({
-      bookTitle:Yup.string().required('Name is required').max(20,'Name can not exceed 20 characters').min(3,'Name can not be shorter than 3 leters'),
+      bookTitle:Yup.string().required('Name is required').min(3,'Name can not be shorter than 3 leters'),
       author:Yup.object().shape({
         authorName:Yup.string().required('Author Name is required').max(50,'Author Name can not exceed 10 characters').min(1,'Author Name can not be shorter than 1 leters'),
         authorBornYear:Yup.string().required('Born year is required').max(4,'Born year can not exceed 4 characters').min(1,'Born year can not be shorter than 1 leters'),
