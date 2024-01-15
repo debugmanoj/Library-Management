@@ -28,8 +28,8 @@ function AddBook() {
         authorBornYear:Yup.string().required('Born year is required').max(4,'Born year can not exceed 4 characters').min(1,'Born year can not be shorter than 1 leters'),
         shortBio:Yup.string().required('ShortBio is required').max(30,'ShortBio can not exceed 30 characters').min(1,'Short Bio can not be shorter than 1 leters'),
       }),
-      ISBN:Yup.string().required('ISBN is required').max(5,'ISBN can not exceed 5 characters').min(1,'ISBN can not be shorter than 1 leters'),
-      publication:Yup.string().required('Publication is required').max(5,'Publication can not exceed 5 characters').min(1,'Publication can not be shorter than 1 leters'),
+      ISBN:Yup.string().required('ISBN is required'),
+      publication:Yup.string().required('Publication is required'),
       
     }),
 
